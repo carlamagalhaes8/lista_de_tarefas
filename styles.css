@@ -1,0 +1,143 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Inter", sans-serif;;
+    background-color: #F0EDF2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 45vh; /* Ajusta a altura do body */
+    justify-content: center;
+  }
+  
+  aside {
+    display: flex; /* Adiciona flexbox */
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center; /* Centraliza verticalmente */
+    height: 30vh; /* Define a altura do aside */
+  }
+  
+  .aside-container {
+    background-color: #E0DCE4;
+    padding: 100px 1440px; /* Ajusta o padding para centralizar melhor */
+    text-align: center; /* Centraliza o conteúdo dentro da aside-container */
+        & header{
+            margin-top: 45px;
+        }
+  }
+  
+  main {
+    background-color: #F0EDF2;
+    border-radius: 1rem;
+    padding: 2rem;
+    max-width: 400px;
+    width: 100%;
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); */
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+  }
+  
+  .input-group {
+    display: flex;
+    width: 100%;
+  }
+  
+  input[type="text"] {
+    flex: 1; /* Faz o input ocupar todo o espaço disponível */
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: 1px solid #E0DCE4;
+    padding: 0 1rem;
+    font-size: 1rem;
+    margin-right: 0.5rem; /* Espaçamento entre o input e o botão */
+  }
+  
+  button {
+    height: 2.5rem;
+    border-radius: 0.5rem;
+    border: none;
+    background-color: #6F3CC3;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  button:hover {
+    background-color: #9359F3;
+  }
+  
+  .task-counts {
+    display: flex;
+    justify-content: space-between; /* Espaça os elementos igualmente */
+    width: 100%; /* Faz com que a div ocupe toda a largura disponível */
+    margin: 0.5rem 0; /* Margem para espaçamento */
+  }
+  
+  #task-count, #completed-count {
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  #no-tasks-message {
+    margin: 0.5rem 0;
+    font-size: 1rem;
+    text-align: center;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+    max-height: 200px;
+    overflow-y: auto;
+  }
+  
+  li.task {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem;
+    border: 1px solid #D1CBD7;
+    border-radius: 0.5rem;
+    margin-bottom: 0.5rem;
+    background-color: #F0EDF2;
+  }
+  
+  li.task.completed {
+    text-decoration: line-through;
+    color: black;
+    background-color: #E0DCE4;
+  }
+  
+  button.complete-button/*, button.remove-button*/ {
+    border: none;
+    background-color: transparent;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+  }
+
+  button.remove-button {
+    color: transparent;
+    background-color: transparent;
+    background-image: url(assets/TrashRegular.png);
+    background-size: 35px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+  
+  button.complete-button:hover/*, button.remove-button:hover*/ {
+    color:  #D1CBD7; 
+  }
+
+  button.remove-button:hover {
+    color: transparent;
+  }
